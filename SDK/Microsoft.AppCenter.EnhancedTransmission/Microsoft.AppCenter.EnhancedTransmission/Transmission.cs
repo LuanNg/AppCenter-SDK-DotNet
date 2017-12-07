@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-namespace Microsoft.AppCenter.Rum
+namespace Microsoft.AppCenter.EnhancedTransmission
 {
-    public partial class RealUserMeasurements
+    public partial class Transmission
     {
         static Task<bool> PlatformIsEnabledAsync()
         {

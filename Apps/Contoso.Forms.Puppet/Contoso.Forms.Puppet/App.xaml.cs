@@ -9,7 +9,7 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
 using Microsoft.AppCenter.Push;
 using Microsoft.AppCenter.Rum;
-//using Microsoft.AppCenter.EnhancedTransmission;
+using Microsoft.AppCenter.EnhancedTransmission;
 using Xamarin.Forms;
 
 namespace Contoso.Forms.Puppet

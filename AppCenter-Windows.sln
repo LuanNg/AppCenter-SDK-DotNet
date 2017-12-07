@@ -131,7 +131,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{15e3fc9b-7714-4468-a296-81627a5b8f01}*SharedItemsImports = 4
 		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{15e3fc9b-7714-4468-a296-81627a5b8f01}*SharedItemsImports = 4
-		SDK\Microsoft.AppCenter.EnhancedTransmission\Microsoft.AppCenter.EnhancedTransmission.Shared\Microsoft.AppCenter.Rum.Shared.projitems*{1b58522c-e606-45ee-a693-d48b0a66f99f}*SharedItemsImports = 13
+		SDK\Microsoft.AppCenter.EnhancedTransmission\Microsoft.AppCenter.EnhancedTransmission.Shared\Microsoft.AppCenter.EnhancedTransmission.Shared.projitems*{1b58522c-e606-45ee-a693-d48b0a66f99f}*SharedItemsImports = 13
 		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{1e9ec0aa-3e32-4551-80c4-e4f3e53d7590}*SharedItemsImports = 4
 		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{1e9ec0aa-3e32-4551-80c4-e4f3e53d7590}*SharedItemsImports = 4
 		SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems*{1f6c139a-29bb-4e74-8df2-f8ccab399a67}*SharedItemsImports = 4
@@ -159,7 +159,7 @@ Global
 		SDK\AppCenterPush\Microsoft.AppCenter.Push.Windows.Shared\Microsoft.AppCenter.Push.Windows.Shared.projitems*{ba25a66a-fcea-49c2-a85a-0f6f54463675}*SharedItemsImports = 13
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Shared\Microsoft.AppCenter.Rum.Shared.projitems*{bcd888d1-a62f-458c-a72b-9df731ee1a55}*SharedItemsImports = 4
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Windows.Shared\Microsoft.AppCenter.Rum.Windows.Shared.projitems*{bcd888d1-a62f-458c-a72b-9df731ee1a55}*SharedItemsImports = 4
-		SDK\Microsoft.AppCenter.EnhancedTransmission\Microsoft.AppCenter.EnhancedTransmission.Windows.Shared\Microsoft.AppCenter.Rum.Windows.Shared.projitems*{bd68a5d5-c299-4a62-a916-8b4c670b2661}*SharedItemsImports = 13
+		SDK\Microsoft.AppCenter.EnhancedTransmission\Microsoft.AppCenter.EnhancedTransmission.Windows.Shared\Microsoft.AppCenter.EnhancedTransmission.Windows.Shared.projitems*{bd68a5d5-c299-4a62-a916-8b4c670b2661}*SharedItemsImports = 13
 		SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems*{c5dac35e-b902-4e24-a8f7-963ad0f85f7a}*SharedItemsImports = 4
 		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{c6c4937c-d5f4-4e00-8b51-8d826ad83c5e}*SharedItemsImports = 13
 		SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Shared\Microsoft.AppCenter.Crashes.Shared.projitems*{db5a0b7d-8090-4a0c-97c7-cdf17aacaaf2}*SharedItemsImports = 13
