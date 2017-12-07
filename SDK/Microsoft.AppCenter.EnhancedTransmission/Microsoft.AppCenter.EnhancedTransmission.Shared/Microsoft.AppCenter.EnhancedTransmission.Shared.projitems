@@ -9,6 +9,6 @@
     <Import_RootNamespace>Microsoft.AppCenter.EnhancedTransmission.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)RealUserMeasurements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transmission.cs" />
   </ItemGroup>
 </Project>

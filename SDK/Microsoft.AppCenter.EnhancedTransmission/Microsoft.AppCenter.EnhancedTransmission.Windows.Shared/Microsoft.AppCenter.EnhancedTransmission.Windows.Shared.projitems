@@ -9,7 +9,7 @@
     <Import_RootNamespace>Microsoft.AppCenter.EnhancedTransmission</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)RealUserMeasurements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transmission.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TestEndpoint.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RumConfiguration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TestUrl.cs" />
