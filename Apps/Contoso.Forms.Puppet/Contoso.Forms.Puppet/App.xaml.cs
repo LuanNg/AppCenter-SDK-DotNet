@@ -57,7 +57,7 @@ namespace Contoso.Forms.Puppet
             Distribute.SetApiUrl("https://appcenter-int.trafficmanager.net/api/v0.1");
             RealUserMeasurements.SetRumKey("b1919553367d44d8b0ae72594c74e0ff");
             AppCenter.Start($"uwp={UwpKey};android={AndroidKey};ios={IosKey}",
-                               typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push), typeof(RealUserMeasurements));
+                               typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push), typeof(RealUserMeasurements), typeof(Transmission));
 
             // Need to use reflection because moving this to the Android specific
             // code causes crash. (Unable to access properties before init is called).

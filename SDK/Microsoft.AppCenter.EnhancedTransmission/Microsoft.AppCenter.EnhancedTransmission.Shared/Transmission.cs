@@ -25,12 +25,5 @@ namespace Microsoft.AppCenter.EnhancedTransmission
             return PlatformSetEnabledAsync(enabled);
         }
 
-        /// <summary>
-        /// Configure key.
-        /// </summary>
-        public static void SetEnhancedTransmissionKey(string EnhancedTransmissionKey)
-        {
-            PlatformSetEnhancedTransmissionKey(EnhancedTransmissionKey);
-        }
     }
 }

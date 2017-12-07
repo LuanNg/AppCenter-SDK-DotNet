@@ -13,9 +13,5 @@ namespace Microsoft.AppCenter.EnhancedTransmission
         {
             return Task.FromResult(default(object));
         }
-
-        static void PlatformSetRumKey(string rumKey)
-        {
-        }
     }
 }
