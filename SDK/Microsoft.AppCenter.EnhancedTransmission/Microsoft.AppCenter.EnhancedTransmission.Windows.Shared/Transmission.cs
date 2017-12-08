@@ -90,7 +90,8 @@ namespace Microsoft.AppCenter.EnhancedTransmission
             {
                 if (enabled)
                 {
-
+                    // hook before send events delegate
+                    
                 }
             }
 
