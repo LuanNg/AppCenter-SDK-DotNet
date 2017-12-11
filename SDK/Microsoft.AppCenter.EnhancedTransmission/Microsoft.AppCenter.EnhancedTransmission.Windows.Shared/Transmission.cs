@@ -1,11 +1,15 @@
-﻿using Microsoft.AppCenter.Channel;
+﻿using Microsoft.AppCenter.Analytics.Ingestion.Models;
+using Microsoft.AppCenter.Ingestion.Models;
+using Microsoft.AppCenter.Channel;
 using Microsoft.AppCenter.Ingestion.Http;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Microsoft.AppCenter.EnhancedTransmission
 {
@@ -79,10 +83,22 @@ namespace Microsoft.AppCenter.EnhancedTransmission
             lock (_serviceLock)
             {
                 base.OnChannelGroupReady(channelGroup, appSecret);
+                channelGroup.FilteringLogs += ChannelGroup_FilteringLogs;
+
                 ApplyEnabledState(InstanceEnabled);
             }
         }
 
+        private void ChannelGroup_FilteringLogs(object sender, FilterLogsEventArgs e)
+        {
+            var analyticsLogs = e.Logs.Where(a => a.GetType() == typeof(EventLog)).ToList();
+
+            // this is a little brute force, and slow. It would be better to use a hash set or push the filtering upstream (maybe)
+            // ie var handledLogs = new HashSet<Log>(e.Logs.Where(a => a.GetType() == typeof(EventLog)));
+            var original = e.Logs.ToList();
+            original.RemoveAll(a => analyticsLogs.Contains(a));
+            e.FilteredLogs = original;
+        }
 
         private void ApplyEnabledState(bool enabled)
         {
@@ -90,7 +106,7 @@ namespace Microsoft.AppCenter.EnhancedTransmission
             {
                 if (enabled)
                 {
-                    // hook before send events delegate
+                    // module specific
                     
                 }
             }

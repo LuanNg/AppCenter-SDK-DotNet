@@ -111,6 +111,10 @@
     <EmbeddedResource Include="Properties\Microsoft.AppCenter.EnhancedTransmission.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AppCenterAnalytics\Microsoft.AppCenter.Analytics.UWP\Microsoft.AppCenter.Analytics.UWP.csproj">
+      <Project>{200073bf-fa7e-42af-8ed5-aa50be7c0295}</Project>
+      <Name>Microsoft.AppCenter.Analytics.UWP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj">
       <Project>{15e3fc9b-7714-4468-a296-81627a5b8f01}</Project>
       <Name>Microsoft.AppCenter.UWP</Name>

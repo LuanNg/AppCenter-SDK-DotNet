@@ -74,6 +74,7 @@ namespace Microsoft.AppCenter.Channel
         #region Events
         public event EventHandler<EnqueuingLogEventArgs> EnqueuingLog;
         public event EventHandler<SendingLogEventArgs> SendingLog;
+        public event EventHandler<FilterLogsEventArgs> FilteringLogs;
         public event EventHandler<SentLogEventArgs> SentLog;
         public event EventHandler<FailedToSendLogEventArgs> FailedToSendLog;
         #endregion
@@ -346,6 +347,22 @@ namespace Microsoft.AppCenter.Channel
                 foreach (var eventArgs in logs.Select(log => new SendingLogEventArgs(log)))
                 {
                     SendingLog?.Invoke(this, eventArgs);
+                }
+            }
+
+            // new filtering event for modifying the collection
+            if(FilteringLogs != null)
+            {
+                var args = new FilterLogsEventArgs(logs);           
+                FilteringLogs.Invoke(this, args);
+                // a filtered set is returned we will use that set for now. 
+                logs = args.FilteredLogs;
+
+                // If all logs are filtered out then we need to call HandleSendingSuccess
+                if (!args.FilteredLogs.Any())
+                {
+                    HandleSendingSuccess(state, batchId);
+                    return;
                 }
             }
 

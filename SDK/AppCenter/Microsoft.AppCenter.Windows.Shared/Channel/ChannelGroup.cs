@@ -22,6 +22,7 @@ namespace Microsoft.AppCenter.Channel
         public event EventHandler<SendingLogEventArgs> SendingLog;
         public event EventHandler<SentLogEventArgs> SentLog;
         public event EventHandler<FailedToSendLogEventArgs> FailedToSendLog;
+        public event EventHandler<FilterLogsEventArgs> FilteringLogs;
 
         public ChannelGroup(string appSecret)
             : this(appSecret, null, null)
@@ -83,7 +84,13 @@ namespace Microsoft.AppCenter.Channel
                 channel.SendingLog += AnyChannelSendingLog;
                 channel.SentLog += AnyChannelSentLog;
                 channel.FailedToSendLog += AnyChannelFailedToSendLog;
+                channel.FilteringLogs += Channel_FilteringLogs;
             }
+        }
+
+        private void Channel_FilteringLogs(object sender, FilterLogsEventArgs e)
+        {
+            FilteringLogs?.Invoke(sender, e);
         }
 
         public void SetEnabled(bool enabled)

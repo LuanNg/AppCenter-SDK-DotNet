@@ -19,6 +19,11 @@ namespace Microsoft.AppCenter.Channel
         event EventHandler<SendingLogEventArgs> SendingLog;
 
         /// <summary>
+        /// Invoked immediatly before sending logs, after the sending event
+        /// </summary>
+        event EventHandler<FilterLogsEventArgs> FilteringLogs;
+
+        /// <summary>
         /// Invoked when a log successfully sent
         /// </summary>
         event EventHandler<SentLogEventArgs> SentLog;

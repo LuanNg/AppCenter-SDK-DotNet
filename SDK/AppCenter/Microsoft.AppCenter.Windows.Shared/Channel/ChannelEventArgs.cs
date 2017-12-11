@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AppCenter.Ingestion.Models;
+using System.Collections.Generic;
 
 namespace Microsoft.AppCenter.Channel
 {
@@ -19,6 +20,17 @@ namespace Microsoft.AppCenter.Channel
     {
         public SendingLogEventArgs(Log log) : base(log) { }
     }
+
+    public class FilterLogsEventArgs : EventArgs
+    {
+        public FilterLogsEventArgs(IList<Log> logs)
+        {
+            Logs = logs;
+        }
+        public IList<Log> Logs { get;  set; }
+        public IList<Log> FilteredLogs { get; set; }
+    }
+
     public class SentLogEventArgs : ChannelEventArgs
     {
         public SentLogEventArgs(Log log) : base(log) { }
