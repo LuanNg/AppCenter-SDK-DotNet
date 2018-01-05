@@ -5,7 +5,6 @@ namespace Microsoft.Azure.Mobile.Distribute
     /// <summary>
     /// Distribute feature.
     /// </summary>
-    [System.Obsolete("Mobile Center classes are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
     public static partial class Distribute
     {
         /// <summary>

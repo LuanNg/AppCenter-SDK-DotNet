@@ -5,8 +5,7 @@ namespace Microsoft.Azure.Mobile.Push
 {
     /// <summary>
     /// Push feature.
-    /// </summary>
-    [System.Obsolete("Mobile Center classes are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
+    /// </summary>]
     public partial class Push
     {
         /// <summary>
