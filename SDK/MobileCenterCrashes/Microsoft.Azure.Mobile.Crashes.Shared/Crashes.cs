@@ -7,6 +7,7 @@ namespace Microsoft.Azure.Mobile.Crashes
     /// <summary>
     /// Crashes service.
     /// </summary>
+    [System.Obsolete("Mobile Center classes are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
     public partial class Crashes
     {
         static Crashes()

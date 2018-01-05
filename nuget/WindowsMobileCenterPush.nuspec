@@ -6,7 +6,7 @@
     <authors>Microsoft Corporation</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft Visual Studio Mobile Center Push package provides push notification capabilities for your mobile applications</summary>
-    <description>This package contains functionalities to send push notifications to users of your application from our portal</description>
+    <description>DEPRECATED. Please use the new App Center NuGet at https://www.nuget.org/packages/Microsoft.AppCenter.Push/. This package contains functionalities to send push notifications to users of your application from our portal</description>
     <copyright>Copyright (c) Microsoft Corporation. All Rights Reserved.</copyright>
     <tags>mobilecenter</tags>
     <projectUrl>https://aka.ms/telgml</projectUrl>

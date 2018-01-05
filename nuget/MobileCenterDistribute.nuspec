@@ -6,7 +6,7 @@
     <authors>Microsoft Corporation</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft Visual Studio Mobile Center Distribute package provides in-app update capabilities for your mobile applications.</summary>
-    <description>This package provides capability to display in-app updates to your app users when a new version of the application is released.</description>
+    <description>DEPRECATED. Please use the new App Center NuGet at https://www.nuget.org/packages/Microsoft.AppCenter.Distribute/. This package provides capability to display in-app updates to your app users when a new version of the application is released.</description>
     <copyright>Copyright (c) Microsoft Corporation. All Rights Reserved.</copyright>
     <tags>mobilecenter</tags>
     <projectUrl>https://aka.ms/telgml</projectUrl>

@@ -6,7 +6,7 @@
     <authors>Microsoft Corporation</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft Visual Studio Mobile Center Push package provides push notification capabilities for your mobile applications</summary>
-    <description>This package contains functionalities to send push notifications to users of your application from our portal</description>
+    <description>DEPRECATED. Please use the new App Center NuGet at https://www.nuget.org/packages/Microsoft.AppCenter.Push/. This package contains functionalities to send push notifications to users of your application from our portal</description>
     <copyright>Copyright (c) Microsoft Corporation. All Rights Reserved.</copyright>
     <tags>mobilecenter</tags>
     <projectUrl>https://aka.ms/telgml</projectUrl>
@@ -18,10 +18,8 @@
         </group>
         <group targetFramework="MonoAndroid403">
             <dependency id="Microsoft.Azure.Mobile" version="$version$" />
-            <dependency id="Xamarin.Firebase.Messaging" version="60.1142.0-beta2"/>
-            <dependency id="Xamarin.Firebase.Core" version="60.1142.0-beta2"/>
-            <dependency id="Xamarin.GooglePlayServices.Basement" version="60.1142.0-beta2"/>
-            <dependency id="Xamarin.Android.Support.v4" version="26.1.0.1"/>
+            <dependency id="Xamarin.Firebase.Messaging" version="42.1001.0"/>
+            <dependency id="Xamarin.Firebase.Core" version="42.1001.0"/>
         </group>
     </dependencies>
     <version>$version$</version>
