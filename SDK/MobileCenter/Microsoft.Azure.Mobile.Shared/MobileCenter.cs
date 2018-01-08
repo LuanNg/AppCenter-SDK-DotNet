@@ -6,7 +6,7 @@ namespace Microsoft.Azure.Mobile
     /// <summary>
     /// SDK core used to initialize, start and control specific service.
     /// </summary>
-    [System.Obsolete("Mobile Center classes are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
+    [System.Obsolete("Mobile Center classes are deprecated because the product name is changed to App Center. Please update your application to use the latest App Center Nugets. More information about the SDK migration is available at https://aka.ms/Yp48u5")]
     public partial class MobileCenter
     {
         // Gets the first instance of an app secret corresponding to the given platform name, or returns the string 
@@ -139,7 +139,7 @@ namespace Microsoft.Azure.Mobile
         ///     This may be called only once per service per application process lifetime.
         /// </summary>
         /// <param name="services">List of services to use.</param>
-        [System.Obsolete("Mobile Center methods are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
+        [System.Obsolete("Mobile Center methods are deprecated because the product name is changed to App Center. Please update your application to use the latest App Center Nugets. More information about the SDK migration is available at https://aka.ms/Yp48u5")]
         public static void Start(params Type[] services)
         {
             PlatformStart(services);
@@ -151,7 +151,7 @@ namespace Microsoft.Azure.Mobile
         /// </summary>
         /// <param name="appSecret">A unique and secret key used to identify the application.</param>
         /// <param name="services">List of services to use.</param>
-        [System.Obsolete("Mobile Center methods are deprecated. Please use the new App Center ones. More information about migration is available at https://aka.ms/Yp48u5")]
+        [System.Obsolete("Mobile Center methods are deprecated because the product name is changed to App Center. Please update your application to use the latest App Center Nugets. More information about the SDK migration is available at https://aka.ms/Yp48u5")]
         public static void Start(string appSecret, params Type[] services)
         {
             PlatformStart(appSecret, services);
